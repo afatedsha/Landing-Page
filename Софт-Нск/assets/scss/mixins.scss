@@ -1,0 +1,36 @@
+
+@mixin  diFlex {
+    display: flex;
+	justify-content: space-between;
+}
+
+@mixin svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: $borderRadius;
+}
+
+@mixin rect {
+    fill: none;
+    stroke-width: 2;
+    stroke-dasharray: 450, 0;
+    transition: all 0.35s linear;
+}
+
+@mixin hoverBtn {
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+@mixin hoverBtnRect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    @media (max-width: 458px) {
+        stroke-dasharray: 15, 510;
+    }
+}

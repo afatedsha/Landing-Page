@@ -25,7 +25,7 @@ span {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: $lincColor;
     text-transform: $uppercase;
 }
 
@@ -124,10 +124,11 @@ button, input {
     top: 68px;
     right: 0;
     width: 136px;
+    font-size: 14px;
     a {
         display: block;
             &:not(:first-of-type) {
-                margin-top: 18px;
+                margin-top: 25px;
             }
     }
 }
